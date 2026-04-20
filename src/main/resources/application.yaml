@@ -1,3 +1,11 @@
 spring:
   application:
     name: Kafka-02
+  kafka:
+    consumer:
+      bootstrap-server: localhost:9092
+      topic-name: "food-topic"
+      consumer-group-id: "my-consumer-group"
+
+server:
+  port: 8081
